@@ -1848,7 +1848,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   minSurviveFall: 2
-  damageForSeconds: 20
+  damageForSeconds: 5
   healthSlider: {fileID: 1509274915}
   currentHealth: 100
   airTime: 0

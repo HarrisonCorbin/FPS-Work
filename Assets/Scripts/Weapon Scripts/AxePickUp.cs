@@ -21,13 +21,15 @@ public class AxePickUp : MonoBehaviour
 
     }
 
-    void OnTriggerEnter(Collider other)
+    void OnTriggerStay(Collider other)
     {
-        if (GetComponent<Collider>().gameObject.name == "My Axe")
+        //The pick up key
+        if (Input.GetKeyDown(KeyCode.F))
         {
-            //The pick up key
-            if (Input.GetKeyDown(KeyCode.F))
+
+            if (GetComponent<Collider>().gameObject.name == "My Axe")
             {
+           
                 Axe.transform.parent = playerHands.gameObject.transform;
                 Axe.transform.localPosition = new Vector3(2, 1, 1);
                 Axe.transform.localRotation = Quaternion.identity;

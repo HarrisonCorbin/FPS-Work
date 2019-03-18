@@ -15,15 +15,16 @@ public class WeaponLetGo : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-       
-                if (Input.GetKeyDown(KeyCode.G))
-                {
-                    Weapon.transform.parent = null;
-                    Weapon.GetComponent<Rigidbody>().isKinematic = false;
-                    Weapon.GetComponent<Collider>().enabled = true;
-        }
+        if (collision.gameObject.name == "MySword")
+        {
+            if (Input.GetKeyDown(KeyCode.G))
+            {
+                Weapon.transform.parent = null;
+                Weapon.GetComponent<Rigidbody>().isKinematic = false;
+                Weapon.GetComponent<Collider>().enabled = true;
+            }
 
-            
+        }
         
     }
 }

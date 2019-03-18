@@ -27,7 +27,7 @@ public class AxePickUp : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.F))
         {
 
-            if (GetComponent<Collider>().gameObject.name == "My Axe")
+            if (GetComponent<Collider>().gameObject.name == "Axe")
             {
            
                 Axe.transform.parent = playerHands.gameObject.transform;
